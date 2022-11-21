@@ -1,0 +1,15 @@
+@import '@angular/material/theming';
+
+@mixin card-theme($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+
+    app-card {
+        >div {
+            font-size: 1.5rem;
+            color: mat-color($primary, darker);
+            background-color: mat-color($accent);
+        }
+    }
+}

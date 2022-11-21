@@ -6,30 +6,25 @@
 
 @include mat-core();
 
-$my-theme-primary: mat-palette($mat-deep-purple, 800, 700, 900);
-$my-theme-accent: mat-palette($mat-green, 500, 700, 900);
-$my-theme-warn: mat-palette($mat-deep-orange, 800, 700, 900);
+@import './themes/green-theme.scss';
+@import './themes/purple-theme.scss';
 
-$my-theme: mat-light-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
+@import './app/Components/card/card.component.scss-theme.scss';
 
-$my-second-primary: mat-palette($mat-light-blue, 800, 700, 900);
-$my-second-accent: mat-palette($mat-lime, 300, 700, 900);
-$my-second-warn: mat-palette($mat-deep-orange, 800, 700, 900);
-
-$my-theme: mat-light-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
-$my-second-theme: mat-dark-theme(
-  $my-second-primary,
-  $my-second-accent,
-  $my-second-warn
-);
+@mixin my-components-theme($theme) {
+  @include card-theme($theme);
+}
 
 .first-theme {
-  @include angular-material-theme($my-theme);
-}
-.second-theme {
-  @include angular-material-theme($my-second-theme);
+  @include angular-material-theme($my-purple-theme);
+  @include my-components-theme($my-purple-theme);
 }
 
+.second-theme {
+  @include angular-material-theme($my-green-theme);
+  @include my-components-theme($my-green-theme);
+}
+ 
 html,
 body {
   height: 100%;

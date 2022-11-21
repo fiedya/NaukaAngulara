@@ -1,0 +1,13 @@
+$my-green-primary: mat-palette($mat-green, 800, 700, 900);
+$my-green-accent: mat-palette($mat-amber, 300, 700, 900);
+$my-green-warn: mat-palette($mat-red, 800, 700, 900);
+
+$green-palette: (
+    100: rgba(65, 166, 65, 0.2),
+    200: rgba(65, 166, 65, 0.4),
+    300: rgba(65, 166, 65, 1),
+);
+
+$my-green-theme: mat-light-theme($my-green-primary,
+        $my-green-accent,
+        $my-green-warn);
