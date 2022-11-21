@@ -1,1 +1,14 @@
-tadam
+<div class="main">
+  <mat-card class="nav-bar">
+    <button mat-raised-button class="nav-button" color="primary">Primary</button>
+    <button mat-raised-button class="nav-button" color="accent">Accent</button>
+    <button mat-raised-button class="nav-button" color="warn">Warn</button>
+  </mat-card>
+  <br />
+  <mat-card>
+    <mat-select placeholder="Theme" [(ngModel)]="theme">
+      <mat-option value="first-theme">Theme</mat-option>
+      <mat-option value="second-theme">My second theme</mat-option>
+    </mat-select>
+  </mat-card>
+</div>

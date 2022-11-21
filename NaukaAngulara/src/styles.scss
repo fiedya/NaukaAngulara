@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+//@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+
+@use "@angular/material" as mat;
+@import "@angular/material/theming";
+
+@include mat-core();
+
+$my-theme-primary: mat-palette($mat-deep-purple, 800, 700, 900);
+$my-theme-accent: mat-palette($mat-green, 500, 700, 900);
+$my-theme-warn: mat-palette($mat-deep-orange, 800, 700, 900);
+
+$my-theme: mat-light-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
+
+$my-second-primary: mat-palette($mat-light-blue, 800, 700, 900);
+$my-second-accent: mat-palette($mat-lime, 300, 700, 900);
+$my-second-warn: mat-palette($mat-deep-orange, 800, 700, 900);
+
+$my-theme: mat-light-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
+$my-second-theme: mat-dark-theme(
+  $my-second-primary,
+  $my-second-accent,
+  $my-second-warn
+);
+
+.first-theme {
+  @include angular-material-theme($my-theme);
+}
+.second-theme {
+  @include angular-material-theme($my-second-theme);
+}
+
+html,
+body {
+  height: 100%;
+  padding: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
