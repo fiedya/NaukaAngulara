@@ -45,7 +45,7 @@
 .qperior-theme {
   @include angular-material-theme($qperior-theme);
   @include my-components-theme($qperior-theme);
-  // @include mat.button-theme($qperior-theme);
+  @include mat.button-theme($qperior-theme);
 }
 
 html,
