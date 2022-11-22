@@ -1,0 +1,11 @@
+@use '@angular/material' as mat;
+@use './palettes.scss' as palette;
+@import './theme-functions.scss';
+
+$my-red-primary: mat.define-palette(palette.$red-palette, 200, 200, 300);
+$my-red-accent: mat-palette($mat-orange, 400, 200, 600);
+$my-red-warn: mat-palette($mat-blue, 800, 700, 900);
+
+$red-theme: mat-light-theme($my-red-primary,
+                $my-red-accent,
+                $my-red-warn);

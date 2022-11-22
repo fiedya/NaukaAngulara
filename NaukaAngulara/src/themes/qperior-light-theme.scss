@@ -1,0 +1,12 @@
+@use '@angular/material' as mat;
+@use './palettes.scss' as palette;
+@import './theme-functions.scss';
+
+
+
+
+$my-qperior-primary: mat.define-palette(palette.$green-palette, 300, 200, 300);
+$my-qperior-accent: mat.define-palette(palette.$purple-palette, 300, 200, 300);
+$my-qperior-warn: mat-palette($mat-red, 800, 500, 900);
+
+$qperior-theme: mat-light-theme($my-qperior-primary, $my-qperior-accent, $my-qperior-warn);

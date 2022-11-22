@@ -1,0 +1,11 @@
+@use '@angular/material' as mat;
+@use './palettes.scss' as palette;
+@import './theme-functions.scss';
+
+$my-green-primary: mat.define-palette(palette.$green-palette, 300, 200, 300);
+$my-green-accent: mat-palette($mat-orange, 400, 200, 600);
+$my-green-warn: mat-palette($mat-red, 800, 700, 900);
+
+$green-theme: mat-dark-theme($my-green-primary,
+                $my-green-accent,
+                $my-green-warn);

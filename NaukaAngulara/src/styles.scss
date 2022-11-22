@@ -6,32 +6,52 @@
 
 @include mat-core();
 
-@import './themes/green-theme.scss';
-@import './themes/purple-theme.scss';
+@import './themes/green-dark-theme.scss';
+@import './themes/purple-light-theme.scss';
+@import './themes/grey-light-theme.scss';
+@import './themes/ice-dark-theme.scss';
+@import './themes/red-light-theme.scss';
+@import './themes/qperior-light-theme.scss';
 
-@import './app/Components/card/card.component.scss-theme.scss';
+@import './app/components/card/card.component.scss-theme.scss';
+
+
 
 @mixin my-components-theme($theme) {
   @include card-theme($theme);
+  /*more components*/
 }
 
-.first-theme {
-  @include angular-material-theme($my-purple-theme);
-  @include my-components-theme($my-purple-theme);
+.purple-theme {
+  @include angular-material-theme($purple-theme);
+  @include my-components-theme($purple-theme);
 }
 
-.second-theme {
-  @include angular-material-theme($my-green-theme);
-  @include my-components-theme($my-green-theme);
+.green-theme {
+  @include angular-material-theme($green-theme);
+  @include my-components-theme($green-theme);
 }
- 
+
+.ice-theme {
+  @include angular-material-theme($ice-theme);
+  @include my-components-theme($ice-theme);
+}
+
+.grey-theme {
+  @include angular-material-theme($grey-theme);
+  @include my-components-theme($grey-theme);
+}
+
+.qperior-theme {
+  @include angular-material-theme($qperior-theme);
+  @include my-components-theme($qperior-theme);
+  // @include mat.button-theme($qperior-theme);
+}
+
 html,
 body {
   height: 100%;
   padding: 1rem;
-}
-
-body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }

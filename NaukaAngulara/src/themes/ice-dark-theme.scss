@@ -1,0 +1,14 @@
+@use '@angular/material' as mat;
+@use './palettes.scss' as palette;
+@import './theme-functions.scss';
+
+
+$my-ice-primary: mat.define-palette(palette.$ice-palette, 300, 200, 300);
+$my-ice-accent: mat-palette($mat-orange, 400, 200, 600);
+$my-ice-warn: mat-palette($mat-red, 800, 700, 900);
+
+
+
+$ice-theme: mat-dark-theme($my-ice-primary,
+        $my-ice-accent,
+        $my-ice-warn);

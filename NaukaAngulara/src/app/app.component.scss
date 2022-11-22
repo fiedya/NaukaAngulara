@@ -1,3 +1,6 @@
+@use '@angular/material' as mat;
+@import '/src/styles.scss';
+
 .nav-bar {
   display: flex;
   flex-direction: row;

@@ -7,7 +7,7 @@ import { MatCardModule } from '@angular/material/card'
 import { MatSelectModule } from '@angular/material/select'
 import { MatButtonModule } from '@angular/material/button'
 import { FormsModule } from "@angular/forms"
-import { CardComponent } from './Components/card/card.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
