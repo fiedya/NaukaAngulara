@@ -11,7 +11,7 @@ $my-qperior-warn: mat-palette($mat-red, 800, 500, 900);
 
 $qperior-typography: mat.define-typography-config($font-family: 'Showcard Gothic');
 
-$qperior-theme: mat.define-light-theme((color: (primary: $my-qperior-primary,
+$qperior-theme: mat.define-dark-theme((color: (primary: $my-qperior-primary,
                 accent: $my-qperior-accent,
                 warn: $my-qperior-warn ),
             typography: $qperior-typography,

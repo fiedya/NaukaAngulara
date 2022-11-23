@@ -11,15 +11,30 @@
 @import './themes/grey-light-theme.scss';
 @import './themes/ice-dark-theme.scss';
 @import './themes/red-light-theme.scss';
-@import './themes/qperior-light-theme.scss';
+@import './themes/qperior-light-dark-theme.scss';
 
 @import './app/components/card/card.component.scss-theme.scss';
+@import './app/pages/second-page/second-page-home/second-page-home.theme.scss';
+
+
+html,
+body {
+  height: 100%;
+  padding: 1rem;
+}
 
 
 
 @mixin my-components-theme($theme) {
   @include card-theme($theme);
+  @include second-page-home-theme($theme);
   /*more components*/
+}
+
+.qperior-theme {
+  @include angular-material-theme($qperior-theme);
+  @include my-components-theme($qperior-theme);
+  @include mat.button-theme($qperior-theme);
 }
 
 .purple-theme {
@@ -40,18 +55,4 @@
 .grey-theme {
   @include angular-material-theme($grey-theme);
   @include my-components-theme($grey-theme);
-}
-
-.qperior-theme {
-  @include angular-material-theme($qperior-theme);
-  @include my-components-theme($qperior-theme);
-  @include mat.button-theme($qperior-theme);
-}
-
-html,
-body {
-  height: 100%;
-  padding: 1rem;
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

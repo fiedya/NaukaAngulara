@@ -1,4 +1,14 @@
-<div>
-  <router-outlet></router-outlet>
+<div [class]="theme">
+  <mat-card class="select">
+    <mat-select placeholder="Theme" [(ngModel)]="theme">
+      <mat-option value="qperior-theme">Q-PERIOR</mat-option>
+      <mat-option value="green-theme">GREEN</mat-option>
+      <mat-option value="purple-theme">PURPLE</mat-option>
+      <mat-option value="ice-theme">ICE</mat-option>
+      <mat-option value="grey-theme">GREY</mat-option>
 
+    </mat-select>
+  </mat-card>
+
+  <router-outlet></router-outlet>
 </div>

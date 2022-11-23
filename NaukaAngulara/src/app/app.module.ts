@@ -7,23 +7,21 @@ import { MatCardModule } from '@angular/material/card'
 import { MatSelectModule } from '@angular/material/select'
 import { MatButtonModule } from '@angular/material/button'
 import { FormsModule } from "@angular/forms"
-import { CardComponent } from './components/card/card.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatOptionModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CardComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatButtonModule,
+    MatOptionModule,
     MatSelectModule,
     MatCardModule,
-    FormsModule,
-    MatButtonToggleModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

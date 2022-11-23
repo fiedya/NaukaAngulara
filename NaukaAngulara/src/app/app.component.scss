@@ -1,17 +1,8 @@
 @use '@angular/material' as mat;
 @import '/src/styles.scss';
 
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
-}
-
-.nav-button {
-  width: 15rem;
-}
-
-.select {
-  padding: 1rem;
+mat-card {
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }

@@ -4,12 +4,14 @@ import { GeneralLayoutHomeComponent } from './general-layout-home/general-layout
 import { NavigationBarComponent } from './general-layout-home/components/navigation-bar/navigation-bar.component';
 
 import { GeneralLayoutRoutingModule } from './general-layout-routing.module';
+import { MatButton, MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
   imports: [
     CommonModule,
-    GeneralLayoutRoutingModule
+    GeneralLayoutRoutingModule,
+    MatButtonModule
 
   ],
   declarations: [
