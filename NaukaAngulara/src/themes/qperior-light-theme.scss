@@ -6,7 +6,7 @@
 
 
 $my-qperior-primary: mat.define-palette(palette.$green-palette, 300, 200, 300);
-$my-qperior-accent: mat.define-palette(palette.$purple-palette, 300, 200, 300);
+$my-qperior-accent: mat.define-palette(palette.$purple-palette, 300, 100, 300);
 $my-qperior-warn: mat-palette($mat-red, 800, 500, 900);
 
 $qperior-typography: mat.define-typography-config($font-family: 'Showcard Gothic');

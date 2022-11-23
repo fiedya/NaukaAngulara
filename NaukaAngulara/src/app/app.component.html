@@ -1,27 +1,4 @@
-<div [class]="theme">
-  <mat-card class="nav-bar">
-    <button mat-raised-button class="nav-button" color="primary">Primary</button>
-    <button mat-raised-button class="nav-button" color="accent">Accent</button>
-    <button mat-raised-button class="nav-button" color="warn">Warn</button>
-  </mat-card>
-  <br />
-  <mat-card class="select">
-    <mat-select placeholder="Theme" [(ngModel)]="theme">
-      <mat-option value="qperior-theme">Q-PERIOR</mat-option>
-      <mat-option value="green-theme">GREEN</mat-option>
-      <mat-option value="purple-theme">PURPLE</mat-option>
-      <mat-option value="ice-theme">ICE</mat-option>
-      <mat-option value="grey-theme">GREY</mat-option>
+<div>
+  <router-outlet></router-outlet>
 
-    </mat-select>
-  </mat-card>
-  <mat-card>
-    <app-card>
-    </app-card>
-  </mat-card>
-  <mat-card>
-    <app-card>
-
-    </app-card>
-  </mat-card>
 </div>
